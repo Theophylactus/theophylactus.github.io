@@ -25,11 +25,22 @@
 				background-position: center;
 				background-repeat: no-repeat
 			}
+
+			#main-card {
+				width: 33%;
+			}
+
+
+			@media only screen and (max-width: 800px) {
+				#main-card {
+					width: 50%;
+				}
+			}
 		</style>
 		<title>Situs Theophylacti</title>
 	</head>
 	<body class="d-flex justify-content-center align-items-center text-dark">
-		<div class="card shadow-lg" style="width: 33%">
+		<div class="card shadow-lg" id="main-card">
 			<h4 class="card-header">Salve munde!</h4>
 			<div class="card-body row d-flex flex-nowrap align-items-center m-1">
 				<img src="eques.svg" style="height: 12em;" class="mr-4 me-4">
