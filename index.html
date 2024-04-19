@@ -2,10 +2,21 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/spacelab/bootstrap.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
 		<style>
 			html, body {
 				margin: 0;
 				padding: 0;
+				user-select: none;
+			}
+			body {
+				background: none;
+				height: 100%;
+				font-family: "EB Garamond", serif;
+				font-weight: medium;
 			}
 			html {
 				height: 100%;
@@ -15,16 +26,21 @@
 				background-repeat: no-repeat
 			}
 		</style>
+		<title>Situs Theophylacti</title>
 	</head>
-	<body>
-		<div class="card text-white shadow-bg mb-3" style="width: 33%">
-			<div class="card-header">Salve!</div>
-			<div class="card-body" class="w-100">
-				<img src="eques.svg" style="height: 12em; float: left">
-				<p class="card-text" style="float-none">Feliciter tibi accipio in domum virtualem meam.</p>
-
+	<body class="d-flex justify-content-center align-items-center text-dark">
+		<div class="card shadow-lg" style="width: 33%">
+			<h4 class="card-header">Salve munde!</h4>
+			<div class="card-body row d-flex flex-nowrap align-items-center m-1">
+				<img src="eques.svg" style="height: 12em;" class="mr-4 me-4">
+				
+				<div class="card-text" class="col align-middle">
+					Feliciter tibi accipio in situm meum. Quaesiveris quo servit, respondo ut interim tantum parvus ludus privatus mihi est. Fortasse aliqua die in situm latinitati serviens verterit, sed nunc modo artem situs interretiales delineandi exercendi gratia situm servo.</p>
+				</div>
 			</div>
-
+			<div class="card-footer text-center text-secondary">
+				LINGVA · LATINA · SCIENTIAE · REVIVENDA · EST
+			</div>
 		</div>
 	</body>
 </html>
