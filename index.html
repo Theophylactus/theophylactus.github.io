@@ -17,6 +17,7 @@
 				height: 100%;
 				font-family: "EB Garamond", serif;
 				font-weight: medium;
+				/*backdrop-filter: blur(10px);*/
 			}
 			html {
 				height: 100%;
@@ -26,11 +27,25 @@
 				background-repeat: no-repeat
 			}
 
-			#main-card {
+			#main {
 				width: 33%;
 				min-width: 39em;
+				/*
+				backdrop-filter: blur(5px);
+				background-color: rgba(255, 255, 255, 0.4);
+				*/
+			}
+			#main-card {
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				border-top: none;
 			}
 
+			.card-header {
+				backdrop-filter: blur(3px);
+				background-color: rgba(255, 255, 255, 0.4);
+			}
+	
 
 			@media only screen and (max-width: 800px) {
 				#main-card {
@@ -41,18 +56,30 @@
 		<title>Situs Theophylacti</title>
 	</head>
 	<body class="d-flex justify-content-center align-items-center text-dark">
-		<div class="card shadow-lg" id="main-card">
+		<div id="main">
 			<h4 class="card-header">Salve munde!</h4>
-			<div class="card-body d-flex flex-nowrap align-items-center m-1">
-				<img src="eques.png" style="height: 12em; filter: drop-shadow(-5px 5px 5px #777)" class="mr-4 me-4">
-				
-				<div class="card-text">
-					Feliciter tibi accipio in situm meum. Quaesiveris quo servit, respondo ut interim tantum parvus ludus privatus mihi est. Fortasse aliqua die in situm latinitati serviens verterit, sed nunc modo artis situs interretiales delineandi gratia situm servo.
+			<!-- enim titulo sicut vitrum videndum extra scutum esse necesse est -->
+			<div class="card shadow-lg" id="main-card">
+				<div class="card-body d-flex flex-nowrap align-items-center m-1">
+					<img src="eques.png" style="height: 12em; filter: drop-shadow(-5px 5px 5px #777)" class="mr-4 me-4">
+					
+					<div class="card-text">
+						Feliciter tibi accipio in situm meum. Quaesiveris quo servit, respondo ut interim tantum parvus ludus privatus mihi est. Fortasse aliqua die in situm latinitati serviens verterit, sed nunc modo artis situs interretiales delineandi gratia situm servo.
+					</div>
+				</div>
+				<div class="card-footer text-center text-secondary">
+					LINGVA · LATINA · SCIENTIAE · RESTITVENDA · EST
 				</div>
 			</div>
-			<div class="card-footer text-center text-secondary">
-				LINGVA · LATINA · SCIENTIAE · RESTITVENDA · EST
-			</div>
 		</div>
+		<script>
+			var curImg = new Image();
+
+			curImg.src = "url to your image";
+			curImg.onload = function(){
+				// do whatever here, add it to the background, append the image ect.
+				imgHolder.appendChild(curImg);   
+			}
+		</script>
 	</body>
 </html>
